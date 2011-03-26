@@ -1,4 +1,4 @@
 APPID="app"
 PASSWORD="pass"
 HOST="http://localhost:8008/simulator"
-curl -u $APPID:$PASSWORD $HOST?address=list:registered --data-urlencode "message=$*"
+curl -u $APPID:$PASSWORD $HOST -d"version=1.0&address=list:registered&message=$1"
